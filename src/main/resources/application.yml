@@ -1,0 +1,18 @@
+quarkus:
+  log:
+    level: INFO
+  hibernate-orm:
+    database:
+      generation: update
+    log:
+      sql: true
+    jdbc:
+      timezone: UTC
+  datasource:
+    db-kind: postgresql
+    username: postgres
+    password: docker
+    jdbc: false
+    reactive:
+      url: postgresql://localhost:5432/postgres
+      max-size: 20
